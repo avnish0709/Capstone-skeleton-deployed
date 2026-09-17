@@ -1,0 +1,38 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.badgePrimary {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.badgeSecondary {
+  background: rgba(241, 245, 249, 0.8);
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.badgePulse {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 4px rgba(99, 102, 241, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 16px rgba(99, 102, 241, 0.8);
+  }
+}
